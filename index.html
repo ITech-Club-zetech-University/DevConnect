@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DevConnect helps university students discover events, build projects, and grow together in tech." />
+  <title>DevConnect | Student Developer Community</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="wordmark" href="#home" aria-label="DevConnect home">DevConnect</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+        aria-label="Open navigation menu"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-menu" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#events">Join the Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">University Student Developer Community</p>
+          <h1 id="hero-title">Your next idea starts here.</h1>
+          <p class="hero-text">
+            DevConnect helps students learn modern tools, collaborate with peers, and build real technology projects through guided events and hands-on practice.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="main-cta" href="#events">Explore Events</a>
+            <a class="btn btn-secondary" href="#projects">Discover Projects</a>
+          </div>
+          <p class="welcome-message" id="welcome-message" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="node node-a">Code</div>
+          <div class="node node-b">Cloud</div>
+          <div class="node node-c">AI</div>
+          <div class="node node-d">Open Source</div>
+          <div class="window window-a">
+            <span></span><span></span><span></span>
+            <p>&lt;/&gt; devconnect.js</p>
+          </div>
+          <div class="window window-b">
+            <span></span><span></span><span></span>
+            <p>deploy --static --azure</p>
+          </div>
+          <svg class="connector" viewBox="0 0 500 350" preserveAspectRatio="none">
+            <path d="M80 90 C140 40, 220 40, 260 95" />
+            <path d="M260 95 C320 160, 390 140, 430 210" />
+            <path d="M80 260 C170 210, 230 210, 310 250" />
+            <path d="M190 250 C260 180, 320 190, 430 120" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title">Community snapshot</h2>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <p class="stat-number">500+</p>
+            <h3>Community Members</h3>
+          </article>
+          <article class="stat-card">
+            <p class="stat-number">50+</p>
+            <h3>Events Hosted</h3>
+          </article>
+          <article class="stat-card">
+            <p class="stat-number">20+</p>
+            <h3>Projects Built</h3>
+          </article>
+        </div>
+        <p class="section-note">
+          Demo note: These are sample figures for the workshop and are not verified real-world statistics.
+        </p>
+      </div>
+    </section>
+
+    <section class="events section" id="events" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="events-title">Upcoming events</h2>
+          <p>Hands-on sessions for students exploring modern software development.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card event-card">
+            <span class="tag tag-cloud">Cloud</span>
+            <h3>Cloud Foundations: Deploying Your First Website</h3>
+            <p>Learn static hosting fundamentals, project structure, and beginner-friendly deployment workflows.</p>
+            <p class="status-label">Demo event · Oct 28</p>
+          </article>
+
+          <article class="card event-card">
+            <span class="tag tag-ai">AI</span>
+            <h3>Build with AI: Your First AI-Powered Application</h3>
+            <p>Explore practical AI app concepts, responsible design, and how to prototype quickly.</p>
+            <p class="status-label">Demo event · Nov 4</p>
+          </article>
+
+          <article class="card event-card">
+            <span class="tag tag-oss">Open Source</span>
+            <h3>Open Source: Your First Contribution</h3>
+            <p>Understand pull requests, issue triage, and collaboration etiquette in open-source communities.</p>
+            <p class="status-label">Demo event · Nov 11</p>
+          </article>
+        </div>
+
+        <p class="section-note">All events shown above are workshop demo content.</p>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="projects-title">Featured projects</h2>
+          <p>Examples of the kinds of products students can design and ship together.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3>CampusConnect</h3>
+            <p>A student collaboration platform for sharing opportunities, team formation, and project updates.</p>
+            <ul class="tech-tags" aria-label="CampusConnect technology tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>EcoTrack</h3>
+            <p>A sustainability and recycling tracker helping students log habits and visualize impact goals.</p>
+            <ul class="tech-tags" aria-label="EcoTrack technology tags">
+              <li>Data Visualization</li>
+              <li>Accessibility</li>
+              <li>Cloud Hosting</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>StudyMate</h3>
+            <p>A study-planning tool for creating schedules, managing tasks, and improving focus sessions.</p>
+            <ul class="tech-tags" aria-label="StudyMate technology tags">
+              <li>UI/UX</li>
+              <li>Productivity</li>
+              <li>PWA Basics</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="section-note">These are sample projects for demonstration and are not verified live applications.</p>
+      </div>
+    </section>
+
+    <section class="community section" id="community" aria-labelledby="community-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="community-title">A place for every builder</h2>
+          <p>
+            Whether you are writing your first lines of code or leading advanced technical work, DevConnect welcomes learners at every stage.
+          </p>
+        </div>
+
+        <div class="tracks-grid">
+          <article class="track-card">
+            <h3>Web Development</h3>
+            <p>Build responsive interfaces, improve accessibility, and deploy modern web experiences.</p>
+          </article>
+          <article class="track-card">
+            <h3>AI and Cloud</h3>
+            <p>Understand cloud fundamentals, responsible AI concepts, and real-world app delivery.</p>
+          </article>
+          <article class="track-card">
+            <h3>Open Source</h3>
+            <p>Contribute to public projects, collaborate in teams, and grow through peer review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="wordmark footer-wordmark">DevConnect</p>
+        <p>
+          A student-first developer community for learning, shipping, and growing together through practical technology experiences.
+        </p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-title">Navigate</h2>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-meta">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <span aria-hidden="true">🌓</span>
+          <span id="theme-toggle-text">Dark mode</span>
+        </button>
+        <p class="demo-note">This is a fictional demo website created for an educational workshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="noscript-note">JavaScript is disabled. Navigation and links still work, but mobile menu toggle and theme switching require JavaScript.</p>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
