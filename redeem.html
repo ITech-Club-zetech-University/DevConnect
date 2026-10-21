@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Redeem a free 2-month LinkedIn Premium Business trial shared by the DevConnect community." />
+  <title>Redeem | DevConnect</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      // Apply saved/preferred theme before paint to avoid a flash of the wrong theme.
+      try {
+        var saved = localStorage.getItem("devconnect-theme");
+        var theme = saved === "dark" || saved === "light"
+          ? saved
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="wordmark" href="index.html" aria-label="DevConnect home">DevConnect</a>
+
+      <button
+        class="theme-toggle theme-toggle-nav"
+        id="theme-toggle-nav"
+        type="button"
+        aria-label="Switch to dark theme"
+      >
+        <span aria-hidden="true">🌓</span>
+        <span id="theme-toggle-nav-text">Dark mode</span>
+      </button>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+        aria-label="Open navigation menu"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-menu" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#events">Events</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#community">Community</a></li>
+          <li><a href="redeem.html" aria-current="page">Redeem</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="index.html#events">Join the Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section redeem-hero" aria-labelledby="redeem-title">
+      <div class="container">
+        <p class="eyebrow">Community Perk</p>
+        <h1 id="redeem-title">Redeem a free LinkedIn Premium Business trial</h1>
+        <p class="hero-text">
+          A DevConnect member is sharing a few free 2-month trials of LinkedIn Premium Business. Join millions of
+          members who use Premium to achieve their goals faster with exclusive access to insights, search tools,
+          and direct messaging.
+        </p>
+        <p class="redeem-expiry">
+          <strong>Hurry! Offer expires Nov 4, 2026 at 12:00 AM (PDT).</strong> Terms apply. Each coupon below can only
+          be redeemed once, so once a link has been used it will no longer work for the next person &mdash; please
+          only redeem one.
+        </p>
+      </div>
+    </section>
+
+    <section class="section redeem-list" aria-labelledby="redeem-coupons-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="redeem-coupons-title">Available coupons</h2>
+          <p>Click a button below to open LinkedIn and redeem that coupon. First come, first served.</p>
+        </div>
+
+        <div class="card-grid redeem-grid">
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 1</span>
+            <p class="redeem-code">x4x898vNS</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=x4x898vNS&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 2</span>
+            <p class="redeem-code">xutZrHggu</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=xutZrHggu&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 3</span>
+            <p class="redeem-code">x2uYHdsVr</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=x2uYHdsVr&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 4</span>
+            <p class="redeem-code">xHG8jKkzP</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=xHG8jKkzP&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 5</span>
+            <p class="redeem-code">xnf6NUynj</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=xnf6NUynj&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 6</span>
+            <p class="redeem-code">xFw3QTYwx</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=xFw3QTYwx&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 7</span>
+            <p class="redeem-code">x3Rnptdde</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=x3Rnptdde&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 8</span>
+            <p class="redeem-code">x-dyBFDdg</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=x-dyBFDdg&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+
+          <article class="card redeem-card">
+            <span class="tag tag-cloud">Coupon 9</span>
+            <p class="redeem-code">xkfeMNEyZ</p>
+            <a class="btn btn-primary" href="http://www.linkedin.com/premium/redeem/?upsellOrderOrigin=premium_referrals_my_premium&amp;coupon=xkfeMNEyZ&amp;customKey=ref_b&amp;redeemTypeV2=REFERRAL_COUPON" target="_blank" rel="noopener noreferrer">Redeem on LinkedIn</a>
+          </article>
+        </div>
+
+        <p class="section-note">
+          Coupons are provided by a DevConnect member and are not affiliated with or endorsed by LinkedIn. Availability
+          and eligibility are determined by LinkedIn at redemption time.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="wordmark footer-wordmark">DevConnect</p>
+        <p>
+          A student-first developer community for learning, shipping, and growing together through practical technology experiences.
+        </p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-title">Navigate</h2>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#events">Events</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#community">Community</a></li>
+          <li><a href="redeem.html">Redeem</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-meta">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <span aria-hidden="true">🌓</span>
+          <span id="theme-toggle-text">Dark mode</span>
+        </button>
+        <p class="demo-note">This is a fictional demo website created for an educational workshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="noscript-note">JavaScript is disabled. Navigation and links still work, but mobile menu toggle and theme switching require JavaScript.</p>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
