@@ -12,8 +12,10 @@
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.getElementById("primary-menu");
   const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
-  const themeToggle = document.getElementById("theme-toggle");
-  const themeToggleText = document.getElementById("theme-toggle-text");
+  const themeToggles = [
+    { button: document.getElementById("theme-toggle"), text: document.getElementById("theme-toggle-text") },
+    { button: document.getElementById("theme-toggle-nav"), text: document.getElementById("theme-toggle-nav-text") }
+  ].filter((entry) => entry.button && entry.text);
   const root = document.documentElement;
   const mainCta = document.getElementById("main-cta");
   const welcomeMessage = document.getElementById("welcome-message");
@@ -81,27 +83,27 @@
     const isDark = theme === "dark";
     root.setAttribute("data-theme", isDark ? "dark" : "light");
 
-    if (themeToggle && themeToggleText) {
-      themeToggleText.textContent = isDark ? "Light mode" : "Dark mode";
-      themeToggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
-    }
+    themeToggles.forEach(({ button, text }) => {
+      text.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+    });
   };
 
-  const savedTheme = sessionStorage.getItem("devconnect-theme");
+  const savedTheme = localStorage.getItem("devconnect-theme");
   if (savedTheme === "dark" || savedTheme === "light") {
     applyTheme(savedTheme);
   } else {
-    applyTheme("light");
+    applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
   }
 
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
+  themeToggles.forEach(({ button }) => {
+    button.addEventListener("click", () => {
       const currentTheme = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
       const nextTheme = currentTheme === "dark" ? "light" : "dark";
       applyTheme(nextTheme);
-      sessionStorage.setItem("devconnect-theme", nextTheme);
+      localStorage.setItem("devconnect-theme", nextTheme);
     });
-  }
+  });
 
   // ---------- Interactive CTA message ----------
   if (mainCta && welcomeMessage) {
