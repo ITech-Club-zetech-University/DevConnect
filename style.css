@@ -467,6 +467,23 @@ html[data-theme="dark"] .tag-oss { background: #382915; color: #ffc98a; }
   font-weight: 600;
 }
 
+.theme-toggle-nav {
+  margin-left: auto;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .theme-toggle-nav {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .nav-menu {
+    order: 2;
+  }
+}
+
 .demo-note,
 .noscript-note {
   color: var(--text-muted);
